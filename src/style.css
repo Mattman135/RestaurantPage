@@ -1,0 +1,152 @@
+:root {
+    --header-bc: rgba(0, 0, 0, .4);
+    --middle-bs: rgba(0, 0, 0, .3);
+    --footer-bs: rgba(0, 0, 0, .5);
+    --text-color: rgba(255, 255, 255, .8);
+    --img-bc: rgba(255, 255, 255, .5);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/*header elements*/
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--header-bc);
+    width: 100vw;
+    padding: 12px;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.buttonsDiv button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/*middle div elements*/
+.middleDiv {
+    width: 500px;
+    min-height: 500px;
+}
+
+.middleDivHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--middle-bs);
+    outline: 1px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middleDivHome img {
+    width: 200px;
+    height: 200px;
+    border-radius: 75px;
+}
+
+.middleDivMenu {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+    margin: 20px;
+    background-color: var(--middle-bs);
+}
+
+.middleDivMenu img {
+    width: 200px;
+    height: 200px;
+    background-color: var(--header-bc);
+    padding: 20px;
+}
+
+.middleDivMenu img:hover {
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+.imgDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.middleDivContact {
+    background-color: var(--middle-bs);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.middleDivContact div p {
+    margin: 8px;
+}
+
+.middleDivContact iframe {
+    width: 480px;
+    height: 300px;
+}
+
+.address::before {
+    content: '📍';
+}
+
+.phoneNumber::before {
+    content: '📱';
+}
+
+/*footer elements*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    width: 100vw;
+    background-color: var(--footer-bs);
+    font-size: large;
+    padding: 8px;
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
