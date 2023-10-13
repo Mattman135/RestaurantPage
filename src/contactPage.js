@@ -17,10 +17,10 @@ function loadContactPage() {
     const div = document.createElement('div');
     const address = document.createElement('p');
     address.setAttribute('class', 'address');
-    address.innerHTML = '1024 Oakwood Ave San Diego, CA 22434';
+    address.innerHTML = '666 Oakwood The Number of the Beast Avenue';
     const phoneNumber = document.createElement('p');
     phoneNumber.setAttribute('class', 'phoneNumber');
-    phoneNumber.innerHTML = '(222)-888 5555';
+    phoneNumber.innerHTML = '(666)-666 6666';
     div.appendChild(address);
     div.appendChild(phoneNumber);
 

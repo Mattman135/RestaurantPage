@@ -1,9 +1,10 @@
 :root {
-    --header-bc: rgba(0, 0, 0, .4);
-    --middle-bs: rgba(0, 0, 0, .3);
-    --footer-bs: rgba(0, 0, 0, .5);
-    --text-color: rgba(255, 255, 255, .8);
+    --header-bc: rgba(34, 102, 141);
+    --middle-bs: rgba(34, 102, 141);
+    --footer-bs: rgba(34, 102, 141);
+    --text-color: rgba(255, 250, 221);
     --img-bc: rgba(255, 255, 255, .5);
+    --bc: rgba(255, 204, 112);
 }
 
 *, *::before, *::after {
@@ -20,7 +21,10 @@
     justify-content: space-between;
     color: var(--text-color);
     font-weight: bold;
+    background-color: var(--bc);
 }
+
+
 
 /*header elements*/
 .header {
@@ -48,10 +52,13 @@
     font-weight: bold;
 }
 
+
+
 /*middle div elements*/
 .middleDiv {
     width: 500px;
     min-height: 500px;
+    border-radius: 12px;
 }
 
 .middleDivHome {
@@ -60,7 +67,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--middle-bs);
-    outline: 1px dotted black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -68,9 +74,12 @@
 }
 
 .middleDivHome img {
-    width: 200px;
-    height: 200px;
-    border-radius: 75px;
+    width: 275px;
+    height: 275px;
+    border-radius: 150px;
+    background-color: white;
+    padding: 2px;
+    outline: 3px solid var(--bc);
 }
 
 .middleDivMenu {
@@ -84,15 +93,16 @@
 }
 
 .middleDivMenu img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: var(--header-bc);
     padding: 20px;
 }
 
 .middleDivMenu img:hover {
-    background-color: var(--text-color);
+    scale: .985;
     cursor: pointer;
+    transition: 200ms;
 }
 
 .imgDiv {
@@ -143,6 +153,7 @@
     background-color: var(--footer-bs);
     font-size: large;
     padding: 8px;
+    color: white;
 }
 
 .footer img {

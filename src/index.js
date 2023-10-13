@@ -60,9 +60,9 @@ function component() {
   footerDiv.innerHTML = '© 2023 Mattman135';
 
   const footerLink = document.createElement('a');
-  footerLink.href = 'githublink'; // change this to the correct link later
+  footerLink.href = 'https://github.com/Mattman135/RestaurantPage'; // change this to the correct link later
   const footerImg = document.createElement('img');
-  footerImg.src = 'github-mark-white.png';
+  footerImg.src = 'images/github-mark-white.png';
   footerImg.alt = 'github-image';
   footerLink.appendChild(footerImg);
 
@@ -74,5 +74,12 @@ function component() {
   return contentDiv;
 }
 
+const tabIcon = document.createElement('link');
+tabIcon.rel = 'icon';
+tabIcon.href = 'images/cutlery.png';
+tabIcon.type = 'image/x-icon';
+document.head.appendChild(tabIcon);
+
+
 document.body.appendChild(component());
-document.body.onload(loadHomePage());
+document.body.onload = loadHomePage();

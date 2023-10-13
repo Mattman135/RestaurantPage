@@ -10,7 +10,7 @@ function loadHomePage() {
     text2.innerHTML = 'Order online or visit us';
 
     const image = document.createElement('img');
-    image.src = 'chef.png'
+    image.src = 'images/chef.png'
     image.alt = 'image';
 
     middleDiv.appendChild(text1);
